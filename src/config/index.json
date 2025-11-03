@@ -113,5 +113,15 @@
       "Newfoundland and Labrador Health Services Research and Innovation": "https://ri.easternhealth.ca",
       "CAEP": "https://caep.ca"
     }
-  }
+  },
+  "ads": [
+    {
+      "title": "AERO Planetary Health Conference 2025",
+      "image": "/assets/images/aero-conference-2025.jpg",
+      "alt": "Poster for AERO Planetary Health Conference 2025",
+      "href": "https://forms.office.com/pages/responsepage.aspx?id=mRm4YH8LLUGSo-F9iunj4CEu7SMznAlEvC5-xtdTep5UMTc0UFNXS1NJSzBEVDdSNVJJWlhMWTlJUC4u&route=shorturl",
+      "caption": "Registration is open! Canadian Centre for Climate Change and Adaptation, St. Peter Bay, PEI.",
+      "active": true
+    }
+  ]
 }

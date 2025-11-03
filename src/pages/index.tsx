@@ -11,6 +11,8 @@ import { MembersList } from '../components/MemberCard';
 import RolesAndResponsibilities from '../components/RolesAndResponsibilities';
 import Vision from '../components/Vision';
 import Partners from '../components/Partners'
+import AdsSection from "../components/AdsSection";
+
 
 const App = () => {
   return (
@@ -31,6 +33,10 @@ const App = () => {
         <section id="canvas">
           <Canvas />
         </section>
+      </LazyShow>
+    
+      <LazyShow>
+        <AdsSection />
       </LazyShow>
 
       <LazyShow>
