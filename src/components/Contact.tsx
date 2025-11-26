@@ -8,7 +8,7 @@ const formatLinkText = (text: string) => {
 };
 
 const Contact = () => {
-  const { contactInformation, links } = config.additionalInfo;
+  const { contactInformation, links, planetaryHealthLinks } = config.additionalInfo as any;
 
   return (
     <section id="contact" className="py-20 bg-gray-50">
@@ -27,7 +27,34 @@ const Contact = () => {
             .
           </p>
         </div>
+
         <div className="flex flex-wrap justify-center">
+          {/* Planetary Health and Climate Change Resources */}
+          {planetaryHealthLinks && Object.keys(planetaryHealthLinks).length > 0 && (
+            <>
+              <div className="text-center w-full">
+                <h3 className="text-2xl font-semibold text-red-600 mb-4">
+                  Planetary Health and Climate Change Resources
+                </h3>
+              </div>
+              <ul className="w-full max-w-md text-left mx-auto mb-8">
+                {Object.entries(planetaryHealthLinks).map(([key, url]) => (
+                  <li key={key} className="mb-4">
+                    <a
+                      href={url as string}
+                      className="text-lg text-gray-700 hover:text-blue-500"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      • {formatLinkText(key)}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+
+          {/*Other Helpful Links */}
           <div className="text-center w-full">
             <h3 className="text-2xl font-semibold text-red-600 mb-4">
               Other Helpful Links
@@ -37,7 +64,7 @@ const Contact = () => {
             {Object.entries(links).map(([key, url]) => (
               <li key={key} className="mb-4">
                 <a
-                  href={url}
+                  href={url as string}
                   className="text-lg text-gray-700 hover:text-blue-500"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -52,5 +79,6 @@ const Contact = () => {
     </section>
   );
 };
+
 
 export default Contact;

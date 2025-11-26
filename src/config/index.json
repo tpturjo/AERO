@@ -98,6 +98,13 @@
   },
   "additionalInfo": {
     "contactInformation": "r06gas@mun.ca",
+    "planetaryHealthLinks": {
+    "ClimateData.ca": "https://climatedata.ca/",
+    "Choosing Wisely Canada": "https://choosingwiselycanada.org",
+    "AFMC Planetary Health": "https://www.afmc.ca/strategic-priorities/social-accountability/planetary-health/",
+    "Planetary Health Alliance – What is Planetary Health?": "https://planetaryhealthalliance.org/what-is-planetary-health/",
+    "The Lancet Planetary Health": "https://www.thelancet.com/journals/lanplh/home"
+  },
     "links": {
       "SixForSix": "https://www.mun.ca/medicine/familymedicine/for-faculty/six-for-six/",
       "MUN Department of Emergency Medicine": "https://www.mun.ca/medicine/emergencymedicine/",
@@ -121,7 +128,7 @@
       "alt": "Poster for AERO Planetary Health Conference 2025",
       "href": "https://forms.office.com/pages/responsepage.aspx?id=mRm4YH8LLUGSo-F9iunj4CEu7SMznAlEvC5-xtdTep5UMTc0UFNXS1NJSzBEVDdSNVJJWlhMWTlJUC4u&route=shorturl",
       "caption": "Registration is open! Canadian Centre for Climate Change and Adaptation, St. Peter Bay, PEI.",
-      "active": true
+      "active": false
     }
   ]
 }
